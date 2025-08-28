@@ -1,0 +1,99 @@
+/* استدعاء خط Roboto من جوجل */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+:root{
+    --bodyBG:
+#f6f6f6;
+    --bodyFont:
+#d9d7d6;
+--blue:#9fc5ef;
+
+}
+.dark{
+     --bodyFont: white;
+     --bodyBG:black;
+
+}
+
+body{
+    background-color: var(--bodyBG);
+    color: var(--bodyFont);
+}
+
+
+
+/* كلاس للبورد */
+.border {
+    border: 4px solid rgb(133, 63, 63);
+}
+.flex{/*هيخليك تنظم العناصر جوه اي كونتير*/
+    display: flex;/*هتخلي العناصر من كونتر عادي الي فليكس وده مهم جدا*/
+    align-items: center;/*بستخدمها مع ال فليكس  بتوزع العناصر رأسيا*/
+    margin: 2pc;
+}
+
+/* تهيئة عامة لكل العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* أحسن من الوراثة */
+}
+
+/* إعدادات الخطوط */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior:smooth ;/*يعمل اسكلرول بشكل حلو*/
+}
+
+/* العناوين */
+h1 {
+    width: 600px;            /* لازم تضيف px */
+    height: 400px;    
+           /* لازم تضيف px */
+    border: 4px solid antiquewhite;
+    text-align: center;
+    line-height: 400px;      /* يوسّط النص عموديًا */
+    background-color: #222;  /* خلفية اختيارية للتجربة */
+    color: antiquewhite;     /* لون النص */
+}
+/*GLOBAL*/
+::-webkit-scrollbar {
+    width: 0.9rem;   /* سمك الشريط */
+}
+::-webkit-scrollbar-track {
+       /* لون الخلفية */
+    border: 7px solid #292c3b;
+box-shadow: inset 0 0 2.5px 2px;
+border-radius: 4px;
+background-color:#d4d4d8
+Orgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background:#999;
+    border-radius: 2px;
+            /* دوران الحواف */
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+/* تغيير لون الجزء المتحرك لما نقف عليه */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+a,button{
+    /*all:unset*/
+    all: unset;
+    display: inline-block/* inline block هخلي a زيه عشان الاكتيف يتعمل عليه لان الزارا */;
+}
+/* ال inline bloock بيخلي العنصرين ممكن يجو في نفس السطر عادي */
+
+button:active,a:active{
+    scale: .9;
+}
+button:hover,a:hover{
+    cursor: pointer;
+}
+li{
+   list-style: none;  
+}

@@ -1,0 +1,223 @@
+header {
+  width: 95%; /* تحديد عرض الهيدر */
+  height: 80px;
+  margin: 0 auto; /* توسيط الهيدر أفقيًا */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* توسيط المحتوى جوه الهيدر رأسيًا */
+  padding: 20px 20px;
+  font-weight: bold;
+  border-radius: 55px;
+  color: var(--bodyFont);
+  box-shadow: 0 4px 10px rgba(90, 88, 88, 0.1);
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+
+  & .logo {
+    margin-right: 40px;
+    border: 4px solid rgba(128, 128, 128, 0.244);
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+    padding-inline: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  & .links {
+    display: flex;
+    justify-content: space-between;
+
+    & .products-number {
+      border: 1px solid rgba(128, 128, 128, 0.244);
+      margin-right: 0.9rem;
+      background-color: chocolate;
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      padding-inline: 0.3rem;
+    }
+    & .cart {
+      margin-right: 40px;
+      border: 4px solid rgba(128, 128, 128, 0.244);
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      padding-inline: 1.2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    & .register {
+      margin-right: 40px;
+      border: 4px solid rgba(128, 128, 128, 0.244);
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      padding-inline: 1.2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    & .sign-in {
+      margin-right: 40px;
+      border: 4px solid rgba(128, 128, 128, 0.244);
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      padding-inline: 1.2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    & .sign-in:hover,
+    & .cart:hover,
+    & .register:hover {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+    }
+    & .sign-in:active,
+    & .cart:active,
+    & .register:active {
+      background-color: rgba(94, 91, 91, 0.338);
+    }
+  }
+}
+
+body { 
+    position: relative;
+  background-image: url(/images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+main {
+    position: absolute;
+  margin-top: 15rem;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-inline:80px;
+ 
+}
+
+.card {
+  width: 20%;
+  border: 1px solid #ddd;
+ border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;  overflow: hidden;
+  text-align: center;
+  background-color: rgba(70, 69, 69, 0.556);
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+.card-body {
+    
+  padding: 10px;
+}
+
+.card-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  background-color: black;
+  padding-inline: 1.6rem;
+  border: 1px solid rgba(128, 128, 128, 0.244);
+  border-radius: 55px;
+  -webkit-border-radius: 55px;
+  -moz-border-radius: 55px;
+  -ms-border-radius: 55px;
+  -o-border-radius: 55px;
+}
+.card-text:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.card-text:active {
+  background-color: rgba(72, 72, 72, 0.615);
+}
+
+footer .par {
+    
+  color: red;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color:white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    header{
+        margin: 0 0 0 0;
+        
+    }
+   header .fa-solid {
+
+      display: none; /* إخفاء الأيقونات */
+   }
+
+   .cards-container {
+      display: flex;
+      flex-direction: column; /* يخلي الكروت تحت بعض */
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* مسافة بين الكروت */
+   }
+}
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    justify-content: center;   /* في النص أفقياً */
+    align-items: center;      /* في النص رأسياً */
+    flex-direction: column;   /* لو فيه عناصر جوه، هتترتب تحت بعض */
+    width: 100%;             /* ياخد عرض الشاشة بالكامل */
+    min-height: 100vh;       /* عشان يبقى في النص رأسياً */
+    margin: 0 auto;
+    font-size: 1px;         /* تصغير الخط في الموبايل */
+  }
+}
+
+
+  
+
+
